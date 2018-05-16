@@ -1,3 +1,5 @@
+package com.example.mayorgag4.topfinder;
+
 import java.io.Serializable;
 
 public class DeveloperModel implements Serializable {

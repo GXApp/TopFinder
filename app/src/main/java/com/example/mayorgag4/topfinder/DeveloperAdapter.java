@@ -1,3 +1,6 @@
+package com.example.mayorgag4.topfinder;
+
+import com.example.mayorgag4.topfinder.DeveloperModel;
 import com.google.android.glass.widget.CardBuilder;
 import com.google.android.glass.widget.CardScrollAdapter;
 
