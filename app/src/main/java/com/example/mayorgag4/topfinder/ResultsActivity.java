@@ -69,9 +69,22 @@ public class ResultsActivity extends Activity {
 
     private void findDevelopers(String platform){
         for (int i=1; i<=10; i++){
-            CardBuilder card = new CardBuilder(this, CardBuilder.Layout.TEXT);
+            // CardBuilder card = new CardBuilder(this, CardBuilder.Layout.TEXT);
+
+            // The CardBuilder.Layout.COLUMNS layout shows an image mosaic or
+            // icon on the left side of the card and text on the right side.
+
+            // Specify how the card's content should be laid out.
+
+            CardBuilder card = new CardBuilder(this, CardBuilder.Layout.COLUMNS);
+
             card.setText(platform+" "+Integer.toString(i));
+            card.setFootnote("This is the footnote");
             card.setTimestamp(platform);
+            card.setIcon(R.drawable.ic_person_50);
+
+            // card.setAttributionIcon(R.drawable.ic_person_50);
+
             mCards.add(card);
         }
         mCardScroller.setSelection(0);
