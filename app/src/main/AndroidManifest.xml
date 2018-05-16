@@ -27,15 +27,14 @@
         </activity>
 
         <activity
-            android:name="ResultsActivity"
+            android:name=".ResultsActivity"
             android:immersive="true"
-            android:icon="@drawable/ic_glass_logo">
-            <intent-filter>
-                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
-            </intent-filter>
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/title_activity_main"
+            android:parentActivityName=".MainActivity">
             <meta-data
-                android:name="com.google.android.glass.VoiceTrigger"
-                android:resource="@xml/voice_trigger" />
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mayorgag4.topfinder.MainActivity" />
         </activity>
 
     </application>
