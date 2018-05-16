@@ -1,6 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.mayorgag4.topfinder">
     <uses-permission android:name="com.google.android.glass.permission.DEVELOPMENT" />
     <uses-permission android:name="com.google.android.glass.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
 
     <application
         android:allowBackup="true"
