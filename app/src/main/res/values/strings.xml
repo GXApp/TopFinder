@@ -2,4 +2,6 @@
     <string name="app_name">Top Finder</string>
     <string name="title_activity_main">Top Finder Immersion</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_results">Results</string>
+
 </resources>

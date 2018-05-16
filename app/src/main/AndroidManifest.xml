@@ -1,9 +1,4 @@
-
-
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
-    package="com.example.mayorgag4.topfinder">
-
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.mayorgag4.topfinder">
     <uses-permission android:name="com.google.android.glass.permission.DEVELOPMENT" />
     <uses-permission android:name="com.google.android.glass.permission.INTERNET"/>
 
@@ -14,8 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <!-- The main/home activity (it has no parent activity) -->
         <activity
-            android:name="MainActivity"
+            android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:icon="@drawable/ic_glass_logo">
             <intent-filter>
@@ -26,12 +22,14 @@
                 android:resource="@xml/voice_trigger" />
         </activity>
 
+        <!-- A child of the main activity -->
         <activity
             android:name=".ResultsActivity"
             android:immersive="true"
             android:icon="@mipmap/ic_launcher"
-            android:label="@string/title_activity_main"
+            android:label="@string/title_activity_results"
             android:parentActivityName=".MainActivity">
+
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.mayorgag4.topfinder.MainActivity" />
