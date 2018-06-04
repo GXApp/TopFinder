@@ -92,9 +92,8 @@ public class MainActivity extends Activity {
         mCardScroller.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // Plays disallowed sound to indicate that TAP actions are not supported.
                 AudioManager am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-                am.playSoundEffect(Sounds.DISALLOWED);
+                am.playSoundEffect(Sounds.TAP);
 
                 openOptionsMenu();
             }
@@ -212,7 +211,7 @@ public class MainActivity extends Activity {
 //        return card.getView();
 
 
-        card.setText(R.string.app_name);
+        card.setText(R.string.start_camera);
 
         return card.getView();
 

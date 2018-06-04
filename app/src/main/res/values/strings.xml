@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">Top Finder</string>
+    <string name="app_name">hiOwls</string>
     <string name="title_activity_main">Top Finder Immersion</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_results">Results</string>
+    <string name="start_camera">Tap to Start Camera</string>
 
 </resources>

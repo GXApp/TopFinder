@@ -79,7 +79,6 @@ public class ResultsActivity extends Activity {
             CardBuilder card = new CardBuilder(this, CardBuilder.Layout.COLUMNS);
 
             card.setText(platform+" "+Integer.toString(i));
-            card.setFootnote("Face Matches detected by:");
             card.setTimestamp(platform);
             card.setIcon(R.drawable.ic_person_50);
 
