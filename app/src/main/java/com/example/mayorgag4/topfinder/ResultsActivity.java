@@ -79,7 +79,7 @@ public class ResultsActivity extends Activity {
             CardBuilder card = new CardBuilder(this, CardBuilder.Layout.COLUMNS);
 
             card.setText(platform+" "+Integer.toString(i));
-            card.setFootnote("This is the footnote");
+            card.setFootnote("Face Matches detected by:");
             card.setTimestamp(platform);
             card.setIcon(R.drawable.ic_person_50);
 
@@ -139,10 +139,7 @@ public class ResultsActivity extends Activity {
         if (featureId == WindowUtils.FEATURE_VOICE_COMMANDS || featureId ==  Window.FEATURE_OPTIONS_PANEL) {
             switch (item.getItemId()) {
                 case R.id.developer_fav:
-                    Toast.makeText(getApplicationContext(), "Favorite", Toast.LENGTH_LONG).show();
-                    break;
-                case R.id.developer_hire:
-                    Toast.makeText(getApplicationContext(), "Message", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Select", Toast.LENGTH_LONG).show();
                     break;
                 case R.id.go_back:
                     break;

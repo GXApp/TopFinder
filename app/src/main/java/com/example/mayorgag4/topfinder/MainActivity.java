@@ -178,15 +178,10 @@ public class MainActivity extends Activity {
     public boolean onMenuItemSelected(int featureId, MenuItem item) {
         if (featureId == WindowUtils.FEATURE_VOICE_COMMANDS || featureId ==  Window.FEATURE_OPTIONS_PANEL) {
             switch (item.getItemId()) {
-                case R.id.find_android:
-                    findDevelopers("Android");
+                case R.id.camera:
+                    findDevelopers("Match");
                     break;
-                case R.id.find_javascript:
-                    findDevelopers("Java Script");
-                    break;
-                case R.id.find_ios:
-                    findDevelopers("iOS");
-                    break;
+
             }
             return true;
         }
