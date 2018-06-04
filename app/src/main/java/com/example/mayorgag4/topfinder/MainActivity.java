@@ -205,11 +205,12 @@ public class MainActivity extends Activity {
      * Builds a Glass styled "Hello World!" view using the {@link CardBuilder} class.
      */
     private View buildView() {
-        CardBuilder card = new CardBuilder(this, CardBuilder.Layout.TEXT);
+        CardBuilder card = new CardBuilder(this, CardBuilder.Layout.TITLE);
 
 //        card.setText(R.string.hello_world);
 //        return card.getView();
 
+        card.addImage(R.drawable.owledited);
 
         card.setText(R.string.start_camera);
 

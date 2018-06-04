@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/developer_fav"
-        android:title="Add to favorites" />
+    <item android:id="@+id/send_phone"
+        android:title="Send to Phone" />
     <item android:id="@+id/go_back"
         android:title="Go back" />
 </menu>

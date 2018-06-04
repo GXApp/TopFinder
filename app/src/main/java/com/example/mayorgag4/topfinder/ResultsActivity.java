@@ -137,8 +137,7 @@ public class ResultsActivity extends Activity {
     public boolean onMenuItemSelected(int featureId, MenuItem item) {
         if (featureId == WindowUtils.FEATURE_VOICE_COMMANDS || featureId ==  Window.FEATURE_OPTIONS_PANEL) {
             switch (item.getItemId()) {
-                case R.id.developer_fav:
-                    Toast.makeText(getApplicationContext(), "Select", Toast.LENGTH_LONG).show();
+                case R.id.send_phone:
                     break;
                 case R.id.go_back:
                     break;
