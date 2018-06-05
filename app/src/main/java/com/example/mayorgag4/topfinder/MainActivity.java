@@ -172,15 +172,13 @@ public class MainActivity extends Activity {
         Intent resultsIntent = new Intent(this, ResultsActivity.class);
         resultsIntent.putExtra(ResultsActivity.SEARCH, platform);
         startActivity(resultsIntent);
+
     }
     @Override
     public boolean onMenuItemSelected(int featureId, MenuItem item) {
         if (featureId == WindowUtils.FEATURE_VOICE_COMMANDS || featureId ==  Window.FEATURE_OPTIONS_PANEL) {
-            switch (item.getItemId()) {
-                case R.id.camera:
+            if (item.getItemId()==R.id.camera) {
                     findDevelopers("Match");
-                    break;
-
             }
             return true;
         }
@@ -213,6 +211,8 @@ public class MainActivity extends Activity {
         card.addImage(R.drawable.owledited);
 
         card.setText(R.string.start_camera);
+
+
 
         return card.getView();
 

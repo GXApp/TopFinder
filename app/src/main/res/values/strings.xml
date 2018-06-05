@@ -4,5 +4,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_results">Results</string>
     <string name="start_camera">Tap to Start Camera</string>
+    <string name="glass_voice_trigger">Test my App</string>
 
 </resources>
